@@ -50,100 +50,105 @@ img {-ms-interpolation-mode: bicubic;}
 		}
 
 		table.wrapper {
-		
+
 			table-layout: fixed;
 			-webkit-font-smoothing: antialiased;
 			-webkit-text-size-adjust: 100%;
 			-moz-text-size-adjust: 100%;
 			-ms-text-size-adjust: 100%;
 		}
+
+		img.max-width {
+			max-width: 100% !important;
+		}
+
+		.column.of-2 {
+			width: 50%;
+		}
+
+		.column.of-3 {
+			width: 33.333%;
+		}
+
+		.column.of-4 {
+			width: 25%;
+		}
+
+		ul ul ul ul {
+			list-style-type: disc !important;
+		}
+
+		ol ol {
+			list-style-type: lower-roman !important;
+		}
+
+		ol ol ol {
+			list-style-type: lower-latin !important;
+		}
+
+		ol ol ol ol {
+			list-style-type: decimal !important;
+		}
+
+		@media screen and (max-width:480px) {
+
+			.preheader .rightColumnContent,
+			.footer .rightColumnContent {
+				text-align: left !important;
+			}
+
+			.preheader .rightColumnContent div,
+			.preheader .rightColumnContent span,
+			.footer .rightColumnContent div,
+			.footer .rightColumnContent span {
+				text-align: left !important;
+			}
+
+			.preheader .rightColumnContent,
+			.preheader .leftColumnContent {
+				font-size: 80% !important;
+				padding: 5px 0;
+			}
+
+			table.wrapper-mobile {
+				width: 100% !important;
+				table-layout: fixed;
+			}
+
 			img.max-width {
+				height: auto !important;
 				max-width: 100% !important;
 			}
 
-			.column.of-2 {
-				width: 50%;
+			a.bulletproof-button {
+				display: block !important;
+				width: auto !important;
+				font-size: 80%!important;
+				padding-left: 0 !important;
+				padding-right: 0 !important;
 			}
 
-			.column.of-3 {
-				width: 33.333%;
+			.columns {
+				width: 100% !important;
 			}
 
-			.column.of-4 {
-				width: 25%;
+			.column {
+				display: block !important;
+				width: 100% !important;
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+				margin-left: 0 !important;
+				margin-right: 0 !important;
 			}
 
-			ul ul ul ul {
-				list-style-type: disc !important;
+			.social-icon-column {
+				display: inline-block !important;
 			}
 
-			ol ol {
-				list-style-type: lower-roman !important;
+			.mobile-padding {
+				padding: 0px !important;
 			}
-
-			ol ol ol {
-				list-style-type: lower-latin !important;
-			}
-
-			ol ol ol ol {
-				list-style-type: decimal !important;
-			}
-
-			@media screen and (max-width:480px) {
-
-				.preheader .rightColumnContent,
-				.footer .rightColumnContent {
-					text-align: left !important;
-				}
-
-				.preheader .rightColumnContent div,
-				.preheader .rightColumnContent span,
-				.footer .rightColumnContent div,
-				.footer .rightColumnContent span {
-					text-align: left !important;
-				}
-
-				.preheader .rightColumnContent,
-				.preheader .leftColumnContent {
-					font-size: 80% !important;
-					padding: 5px 0;
-				}
-
-				table.wrapper-mobile {
-					width: 100% !important;
-					table-layout: fixed;
-				}
-
-				img.max-width {
-					height: auto !important;
-					max-width: 100% !important;
-				}
-
-				a.bulletproof-button {
-					display: block !important;
-					width: auto !important;
-					font-size: 80%;
-					padding-left: 0 !important;
-					padding-right: 0 !important;
-				}
-
-				.columns {
-					width: 100% !important;
-				}
-
-				.column {
-					display: block !important;
-					width: 100% !important;
-					padding-left: 0 !important;
-					padding-right: 0 !important;
-					margin-left: 0 !important;
-					margin-right: 0 !important;
-				}
-
-				.social-icon-column {
-					display: inline-block !important;
-				}
-			}
+		}
 	</style>
 </head>
 
@@ -317,7 +322,7 @@ img {-ms-interpolation-mode: bicubic;}
 																width="100%" style="table-layout: fixed;">
 																<tbody>
 																	<tr>
-																		<td style="padding:40px 20px 18px 20px; line-height:22px; text-align:inherit;"
+																		<td class="mobile-padding" style="padding:40px 20px 18px 20px; line-height:22px; text-align:inherit;"
 																			height="100%" valign="top">
 																			<div>
 																				<div
@@ -339,7 +344,8 @@ img {-ms-interpolation-mode: bicubic;}
 																						nibh quis mollis. Praesent
 																						sollicitudin dapibus purus, id
 																						fermentum massa sagittis
-																						at.</span></div>
+																						at.</span>
+																				</div>
 																				<div></div>
 																			</div>
 																		</td>
@@ -363,7 +369,7 @@ img {-ms-interpolation-mode: bicubic;}
 																							bgcolor="#ff3333"
 																							style="border-radius:6px; font-size:16px; text-align:center; background-color:inherit;">
 																							<a href="#"
-																								style="background-color:#ff3333; border:1px solid #ff3333; border-color:#ff3333; border-radius:40px; border-width:1px; color:#ffffff; display:inline-block; font-size:18px; font-weight:normal; letter-spacing:0px; line-height:normal; padding:12px 30px 12px 30px; text-align:center; text-decoration:none; border-style:solid; font-family:inherit;"
+																							class="bulletproof-button"	style="background-color:#ff3333; border:1px solid #ff3333; border-color:#ff3333; border-radius:40px; border-width:1px; color:#ffffff; display:inline-block; font-size:18px; font-weight:normal; letter-spacing:0px; line-height:normal; padding:12px 30px 12px 30px; text-align:center; text-decoration:none; border-style:solid; font-family:inherit;"
 																								target="_blank">Curabitur</a>
 																						</td>
 																					</tr>
@@ -396,7 +402,8 @@ img {-ms-interpolation-mode: bicubic;}
 																					style="font-family: inherit; text-align: center">
 																					<span
 																						style="color: #ffd93c; font-size: 18px">Maecenas
-																						efficituru</span></div>
+																						efficituru</span>
+																				</div>
 																				<div></div>
 																			</div>
 																		</td>
@@ -404,8 +411,7 @@ img {-ms-interpolation-mode: bicubic;}
 																</tbody>
 															</table>
 															<table border="0" cellpadding="0" cellspacing="0"
-																width="100%"
-																style="table-layout: fixed;">
+																width="100%" style="table-layout: fixed;">
 																<tbody>
 																	<tr>
 
@@ -420,7 +426,8 @@ img {-ms-interpolation-mode: bicubic;}
 																					style="font-family: inherit; text-align: inherit">
 																					<span
 																						style="color: #ffecd8; font-size: 18px">Vestibulum
-																						ante</span></div>
+																						ante</span>
+																				</div>
 																				<div
 																					style="font-family: inherit; text-align: inherit">
 																					<span
@@ -435,20 +442,24 @@ img {-ms-interpolation-mode: bicubic;}
 																				</div>
 																				<div
 																					style="font-family: inherit; text-align: inherit">
-																					<br /></div>
+																					<br />
+																				</div>
 																				<div
 																					style="font-family: inherit; text-align: start">
-																					<br /></div>
+																					<br />
+																				</div>
 																				<div
 																					style="font-family: inherit; text-align: inherit">
 																					<span
 																						style="color: #ffecd8; font-size: 18px; font-family: inherit">Aenean
-																						a ipsum</span></div>
+																						a ipsum</span>
+																				</div>
 
 
 																				<div
 																					style="font-family: inherit; text-align: start">
-																					<br /></div>
+																					<br />
+																				</div>
 																				<div
 																					style="font-family: inherit; text-align: inherit">
 																					<span style="color: #ffecd8">Mauris
@@ -456,31 +467,38 @@ img {-ms-interpolation-mode: bicubic;}
 																						sit amet, viverra a nibh. Cras
 																						tempor blandit enim, quis
 																						posuere dui volutpat
-																						rutrum.</span></div>
+																						rutrum.</span>
+																				</div>
 																				<div
 																					style="font-family: inherit; text-align: inherit">
-																					<br /></div>
+																					<br />
+																				</div>
 																				<div
 																					style="font-family: inherit; text-align: start">
-																					<br /></div>
+																					<br />
+																				</div>
 																				<div
 																					style="font-family: inherit; text-align: inherit">
 																					<span
 																						style="color: #ffecd8; font-size: 18px; font-family: inherit">Suspendisse
-																						tristique</span></div>
+																						tristique</span>
+																				</div>
 																				<div
 																					style="font-family: inherit; text-align: start">
-																					<br /></div>
+																					<br />
+																				</div>
 																				<div
 																					style="font-family: inherit; text-align: inherit">
 																					<span style="color: #ffecd8">Nulla
 																						pellentesque enim odio, at
 																						posuere ante maximus ut. Quisque
 																						euismod vehicula risus sed
-																						finibus.</span></div>
+																						finibus.</span>
+																				</div>
 																				<div
 																					style="font-family: inherit; text-align: start">
-																					<br /></div>
+																					<br />
+																				</div>
 																				<div></div>
 
 
@@ -690,4 +708,5 @@ img {-ms-interpolation-mode: bicubic;}
 		</div>
 	</center>
 </body>
+
 </html>
